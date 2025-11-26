@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --primary: 220 85 60;
+  --primary-foreground: 0 0 100;
+  
+  /* Background Colors */
+  --background: 36 20 10 / 0.03;
+  --foreground: 222 47 11;
+  
+  /* Card Colors */
+  --card: 0 0 100;
+  --card-foreground: 222 47 11;
+  
+  /* Border & Input */
+  --border: 214 32 91;
+  --input: 214 32 91;
+  --ring: 220 85 60;
+  
+  /* Muted */
+  --muted: 210 40 96;
+  --muted-foreground: 215 16 47;
+  
+  /* Accent */
+  --accent: 210 40 96;
+  --accent-foreground: 222 47 11;
+  
+  /* Destructive */
+  --destructive: 0 84 60;
+  --destructive-foreground: 0 0 98;
+  
+  /* Secondary */
+  --secondary: 210 40 96;
+  --secondary-foreground: 222 47 11;
+  
+  /* Radius */
+  --radius: 0.5rem;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f5f2;
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-gray-200 {
+  scrollbar-color: rgb(229 231 235) transparent;
+}
+
+.scrollbar-track-transparent {
+  scrollbar-color: rgb(229 231 235) transparent;
+}
+
+/* Webkit scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(229 231 235);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(209 213 219);
+}
